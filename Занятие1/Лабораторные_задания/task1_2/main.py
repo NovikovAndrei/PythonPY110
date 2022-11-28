@@ -6,8 +6,8 @@ def task() -> int:
         "Turquoise",
         "Cyan"
     ]
-
-    return None  # TODO найти длину самого длинного слова
+    return max(map(len, list_words))
+    # return len(max(list_words))   Не понимаю, почему нельзя обойтись без "map"?
 
 
 if __name__ == "__main__":
